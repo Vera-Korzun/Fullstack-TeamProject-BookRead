@@ -134,7 +134,7 @@ const AuthForm = ({
                                             }`}
                                             type="password"
                                             name="password"
-                                            placeholder="Пароль"
+                                            placeholder="Password"
                                         />
                                         <span className="authError">
                                             <ErrorMessage name="password" />
@@ -144,7 +144,7 @@ const AuthForm = ({
                                 {location.pathname === '/signup' && (
                                     <label className="authFormFild">
                                         <span className="authFormText">
-                                            Підтвердіть пароль{' '}
+                                            Confirm password{' '}
                                             <sup className="authFormStar">
                                                 *
                                             </sup>
@@ -158,7 +158,7 @@ const AuthForm = ({
                                                 }`}
                                                 type="password"
                                                 name="passwordConfirmation"
-                                                placeholder="Пароль"
+                                                placeholder="Password"
                                             />
                                             <span className="authError">
                                                 <ErrorMessage name="passwordConfirmation" />
@@ -171,8 +171,8 @@ const AuthForm = ({
                                     type="submit"
                                 >
                                     {location.pathname === '/signup'
-                                        ? 'Зареєструватися'
-                                        : 'Увійти'}
+                                        ? 'Sign up'
+                                        : 'Log in'}
                                 </button>
                                 {location.pathname === '/signup' ? (
                                     <button
@@ -184,10 +184,10 @@ const AuthForm = ({
                                             className="buttonSignUpMain"
                                         >
                                             <p className="buttonSignUpMain__text">
-                                                Вже з нами?{' '}
+                                                Already with us?{' '}
                                                 <span className="buttonSignUpMain__link">
                                                     {' '}
-                                                    Увійти{' '}
+                                                    Log in{' '}
                                                 </span>{' '}
                                             </p>
                                         </Link>
@@ -199,7 +199,7 @@ const AuthForm = ({
                                         className="mainButton authFormBtnSec buttonSignUpMain"
                                     >
                                         <span className="buttonSignUpMain__link">
-                                            Реєстрація
+                                            Sign up
                                         </span>
                                     </button>
                                 ) : (
@@ -208,7 +208,7 @@ const AuthForm = ({
                                         className="mainButton authFormBtnSec buttonSignUpMain"
                                     >
                                         <span className="buttonSignUpMain__link">
-                                            Реєстрація
+                                            Sign up
                                         </span>
                                     </Link>
                                 )}
@@ -237,7 +237,7 @@ const AuthForm = ({
                                 <h1 className="mainTitleSignUp">
                                     Books Reading
                                 </h1>
-                                <h2 className="titleSignUp">Допоможе вам</h2>
+                                <h2 className="titleSignUp">Will help you</h2>
                                 <ul className="authFormList">
                                     <li className="authFormText">
                                         <img
@@ -246,8 +246,8 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Швидше сформулювати свою ціль і
-                                            розпочати читати
+                                            Formulate your goal faster and start
+                                            reading
                                         </p>
                                     </li>
                                     <li className="authFormText">
@@ -257,8 +257,8 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Пропорційно розподілити навантаження
-                                            на кожний день
+                                            Proportionately distribute the load
+                                            for each day
                                         </p>
                                     </li>
                                     <li className="authFormText">
@@ -268,13 +268,11 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Відстежувати особистий успіх
+                                            Track personal success
                                         </p>
                                     </li>
                                 </ul>
-                                <h2 className="titleSignUp">
-                                    Також ви зможете
-                                </h2>
+                                <h2 className="titleSignUp">You can also</h2>
                                 <ul className="authFormList">
                                     <li className="authFormText ">
                                         <img
@@ -283,8 +281,8 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Формувати особисту думку незалежну
-                                            від інших
+                                            Form a personal opinion independent
+                                            of others
                                         </p>
                                     </li>
                                     <li className="authFormText">
@@ -294,8 +292,8 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Підвищити свої професійні якості
-                                            опираючись на нові знання
+                                            Improve your professional qualities
+                                            based on new knowledge
                                         </p>
                                     </li>
                                     <li className="authFormText last">
@@ -305,7 +303,7 @@ const AuthForm = ({
                                             alt=""
                                         />
                                         <p className="instraction">
-                                            Стати цікавим співрозмовником
+                                            Become an interesting interlocutor
                                         </p>
                                     </li>
                                 </ul>
