@@ -50,7 +50,7 @@ const AuthForm = ({
                                 {location.pathname === '/signup' && (
                                     <label className="authFormFild">
                                         <span className="authFormText">
-                                            Ім'я{' '}
+                                            Name{' '}
                                             <sup className="authFormStar">
                                                 {' '}
                                                 *
@@ -76,7 +76,7 @@ const AuthForm = ({
                                 )}
                                 <label className="authFormFild">
                                     <span className="authFormText">
-                                        Електронна адреса{' '}
+                                        E-mail{' '}
                                         <sup className="authFormStar">*</sup>
                                     </span>
                                     <div className="wrapper">
@@ -122,7 +122,7 @@ const AuthForm = ({
                                 </label>
                                 <label className="authFormFild">
                                     <span className="authFormText">
-                                        Пароль{' '}
+                                        Password{' '}
                                         <sup className="authFormStar">*</sup>
                                     </span>
                                     <div className="wrapper">
