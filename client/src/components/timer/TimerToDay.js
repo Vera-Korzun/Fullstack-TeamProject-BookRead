@@ -49,7 +49,7 @@ const TimerToDay = ({ data }) => {
                         <span>:</span>
                     </p>
                     <p className="timer__text">
-                        <small>ДН</small>
+                        <small>Day</small>
                     </p>
                 </div>
                 <div className="timer-hours">
@@ -58,7 +58,7 @@ const TimerToDay = ({ data }) => {
                         <span>:</span>
                     </p>
                     <p className="timer__text">
-                        <small>ГОД</small>
+                        <small>Hour</small>
                     </p>
                 </div>
 
@@ -68,7 +68,7 @@ const TimerToDay = ({ data }) => {
                         <span>:</span>
                     </p>
                     <p className="timer__text">
-                        <small>ХВ</small>
+                        <small>Min</small>
                     </p>
                 </div>
                 <div className="timer-seconds">
@@ -76,7 +76,7 @@ const TimerToDay = ({ data }) => {
                         {String(timerSeconds).padStart(2, '0')}{' '}
                     </p>
                     <p className="timer__text">
-                        <small>СЕК</small>
+                        <small>Sec</small>
                     </p>
                 </div>
             </div>

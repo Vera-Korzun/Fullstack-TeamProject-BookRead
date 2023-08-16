@@ -20,18 +20,18 @@ const getYear = () => {
 
 const schema = Yup.object().shape({
     title: Yup.string()
-        .min(2, 'Занадто коротка назва!')
-        .required('Заповніть поле "Назва книги"'),
-    author: Yup.string().required('Заповніть поле "Автор книги"'),
+        .min(2, 'Title too short!')
+        .required('Fill in the "Book Name" field'),
+    author: Yup.string().required('Fill in the field "Author of the book"'),
     year: Yup.number()
-        .min(1500, 'Min значення 1500')
-        .max(getYear(), 'Не більш, ніж поточний рік')
-        .required('Заповніть поле "Рік випуску"')
-        .typeError('Введіть число'),
+        .min(1500, 'Min value 1500')
+        .max(getYear(), 'Not more than the current year')
+        .required('Fill in the "Year of Release" field')
+        .typeError('Enter a number'),
     numberOfPages: Yup.number()
-        .min(1, 'Min значення 1')
-        .required('Заповніть поле "Кількість сторінок"')
-        .typeError('Введіть число'),
+        .min(1, 'Min value 1')
+        .required('Fill in the field "Number of pages"')
+        .typeError('Enter a number'),
 });
 
 const initialState = {
@@ -71,11 +71,9 @@ const LibraryForm = () => {
                 {booksWillRead.length ||
                 bookNowRead.length ||
                 bookFinished.length ? (
-                    <h2 className="libraryFormTitle hidden"> Бібліотека</h2>
+                    <h2 className="libraryFormTitle hidden"> Library</h2>
                 ) : (
-                    <h2 className="libraryFormTitle">
-                        Додай книгу в бібліотеку
-                    </h2>
+                    <h2 className="libraryFormTitle">Add book to library</h2>
                 )}
                 <ButtonAdd onHandleClick={openModal} />
                 {isOpenModal && (
@@ -106,7 +104,7 @@ const LibraryForm = () => {
                                         <div className="bookFormList ">
                                             <label className="bookFormListItem">
                                                 <span className="bookFormListItemTitle">
-                                                    Назва книги
+                                                    The title of the book
                                                 </span>
                                                 <div className="wrapper">
                                                     <Field
@@ -127,7 +125,7 @@ const LibraryForm = () => {
                                             <div className="bookFormhelpers">
                                                 <label className="bookFormListItem">
                                                     <span className="bookFormListItemTitle">
-                                                        Автор книги
+                                                        The author of the book
                                                     </span>
                                                     <div className="wrapper">
                                                         <Field
@@ -150,7 +148,7 @@ const LibraryForm = () => {
 
                                                 <label className="bookFormListItem">
                                                     <span className="bookFormListItemTitle">
-                                                        Рік випуску
+                                                        The year of publication
                                                     </span>
                                                     <div className="wrapper">
                                                         <Field
@@ -171,7 +169,7 @@ const LibraryForm = () => {
 
                                                 <label className="bookFormListItem">
                                                     <span className="bookFormListItemTitle">
-                                                        Кількість сторінок
+                                                        Number of pages
                                                     </span>
                                                     <div className="wrapper">
                                                         <Field
@@ -197,7 +195,7 @@ const LibraryForm = () => {
                                             type="submit"
                                             className="bookFormBtn"
                                         >
-                                            Додати
+                                            Add
                                         </button>
                                     </Form>
                                 )}
@@ -222,7 +220,7 @@ const LibraryForm = () => {
                             <div className="bookFormList ">
                                 <label className="bookFormListItem">
                                     <span className="bookFormListItemTitle">
-                                        Назва книги
+                                        The title of the book
                                     </span>
                                     <div className="wrapper">
                                         <Field
@@ -243,7 +241,7 @@ const LibraryForm = () => {
                                 <div className="bookFormhelpers">
                                     <label className="bookFormListItem">
                                         <span className="bookFormListItemTitle">
-                                            Автор книги
+                                            The author of the book
                                         </span>
                                         <div className="wrapper">
                                             <Field
@@ -264,7 +262,7 @@ const LibraryForm = () => {
 
                                     <label className="bookFormListItem">
                                         <span className="bookFormListItemTitle">
-                                            Рік випуску
+                                            The year of publication
                                         </span>
                                         <div className="wrapper">
                                             <Field
@@ -285,7 +283,7 @@ const LibraryForm = () => {
 
                                     <label className="bookFormListItem">
                                         <span className="bookFormListItemTitle">
-                                            Кількість сторінок
+                                            Number of pages
                                         </span>
                                         <div className="wrapper">
                                             <Field
@@ -306,7 +304,7 @@ const LibraryForm = () => {
                                 </div>
                             </div>
                             <button type="submit" className="bookFormBtn">
-                                Додати
+                                Add
                             </button>
                         </Form>
                     )}

@@ -40,7 +40,7 @@ const ReviewModal = ({ data, closeModal }) => {
         <ReviewModalStyled isReview={data.review} onSubmit={onHandleSubmit}>
             {!data.review && (
                 <>
-                    <p>Обрати рейтинг книги</p>
+                    <p>Choose a book rating</p>
                     <StarRatings
                         rating={rating}
                         starRatedColor="#FF6B08"
@@ -51,7 +51,7 @@ const ReviewModal = ({ data, closeModal }) => {
                         numberOfStars={5}
                         name="rating"
                     />
-                    <p>Резюме</p>
+                    <p>Resume</p>
                 </>
             )}
             {change && (
@@ -86,7 +86,7 @@ const ReviewModal = ({ data, closeModal }) => {
                     onChange={onHandleChange}
                 />
             )}
-            {showError && <p className="review-error">Не може бути порожнім</p>}
+            {showError && <p className="review-error">Cannot be empty</p>}
             {data.review && !change && (
                 <p className="current-resume">{data.review}</p>
             )}
@@ -96,7 +96,7 @@ const ReviewModal = ({ data, closeModal }) => {
                     className="secondButton"
                     onClick={closeModal}
                 >
-                    Назад
+                    Go back
                 </button>
 
                 {data.review && !change && (
@@ -105,18 +105,18 @@ const ReviewModal = ({ data, closeModal }) => {
                         onClick={isChange}
                         className="mainButton"
                     >
-                        Змінити
+                        Change
                     </button>
                 )}
 
                 {!data.review && (
                     <button type="submit" className="mainButton">
-                        Зберегти
+                        Save
                     </button>
                 )}
                 {change && (
                     <button type="submit" className="mainButton">
-                        Зберегти
+                        Save
                     </button>
                 )}
             </div>

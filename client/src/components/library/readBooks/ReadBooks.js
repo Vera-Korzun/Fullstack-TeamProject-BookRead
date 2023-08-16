@@ -14,13 +14,13 @@ const ReadBooks = () => {
     return (
         <ReadBooksStyled className="readBooksStyled container">
             <Tablet>
-                <h2>Прочитано</h2>
+                <h2>It has been read</h2>
                 <div className="table-title">
-                    <p>Назва книги</p>
-                    <p>Автор</p>
-                    <p>Рік</p>
-                    <p>Стор.</p>
-                    <p>Рейтинг книги</p>
+                    <p>Book title</p>
+                    <p>Author</p>
+                    <p>Year</p>
+                    <p>Pages</p>
+                    <p>Book rating</p>
                 </div>
                 <ul>
                     {bookFinished.map(book => (
@@ -30,7 +30,7 @@ const ReadBooks = () => {
             </Tablet>
             <Mobile>
                 <div className="readMobil">
-                    <h2>Прочитано</h2>
+                    <h2>It has been read</h2>
                     <ul>
                         {bookFinished.map(book => (
                             <ReadBookItemMobile key={book._id} item={book} />

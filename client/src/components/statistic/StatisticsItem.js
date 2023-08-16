@@ -11,7 +11,7 @@ const StatisticsItem = ({ item }) => {
             <span className="date">{changedDate}</span>
             <span className="pagesCount">
                 {item.pageCount}
-                <span className="pagesText">стор.</span>
+                <span className="pagesText">pages</span>
             </span>
         </li>
     );

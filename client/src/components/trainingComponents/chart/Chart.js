@@ -57,13 +57,13 @@ const Chart = () => {
     for (let num = 0; num <= training?.duration; num++) {
         data.push({
             name: plan[num],
-            ПЛАН: pagesReadPerDay,
-            ФАКТ: fact(plan[num]),
+            Plan: pagesReadPerDay,
+            Fact: fact(plan[num]),
         });
     }
     const [opacity] = useState({
-        ПЛАН: 1,
-        ФАКТ: 1,
+        Plan: 1,
+        Fact: 1,
     });
 
     const renderColorfulLegendText = value => {
@@ -73,7 +73,7 @@ const Chart = () => {
     return (
         <ChartWrapper className="chartWrapper">
             <div className="title-wrap">
-                <h2 className="title">кiлькiсть сторiнок / день</h2>
+                <h2 className="title">number of pages / day</h2>
                 <div className="page-wrap">
                     <span className="pages">{pagesReadPerDay}</span>
                 </div>
@@ -92,19 +92,19 @@ const Chart = () => {
                         >
                             <Line
                                 type="monotone"
-                                dataKey="ПЛАН"
+                                dataKey="Plan"
                                 stroke="#091E3F"
                                 fill="#091E3F"
-                                strokeOpacity={opacity.ПЛАН}
+                                strokeOpacity={opacity.Plan}
                                 strokeWidth={2}
                                 activeDot={{ r: 8 }}
                             />
                             <Line
                                 type="monotone"
-                                dataKey="ФАКТ"
+                                dataKey="Fact"
                                 stroke="#FF6B08"
                                 fill="#FF6B08"
-                                strokeOpacity={opacity.ФАКТ}
+                                strokeOpacity={opacity.Fact}
                                 strokeWidth={2}
                                 activeDot={{ r: 8 }}
                             />
@@ -127,7 +127,7 @@ const Chart = () => {
                         </LineChart>
                     </ResponsiveContainer>
 
-                    <p className="text-x-line">день</p>
+                    <p className="text-x-line">day</p>
                 </div>
             </Tablet>
             <Mobile>
@@ -144,19 +144,19 @@ const Chart = () => {
                         >
                             <Line
                                 type="monotone"
-                                dataKey="ПЛАН"
+                                dataKey="Plan"
                                 stroke="#091E3F"
                                 fill="#091E3F"
-                                strokeOpacity={opacity.ПЛАН}
+                                strokeOpacity={opacity.Plan}
                                 strokeWidth={2}
                                 activeDot={{ r: 8 }}
                             />
                             <Line
                                 type="monotone"
-                                dataKey="ФАКТ"
+                                dataKey="Fact"
                                 stroke="#FF6B08"
                                 fill="#FF6B08"
-                                strokeOpacity={opacity.ФАКТ}
+                                strokeOpacity={opacity.Fact}
                                 strokeWidth={2}
                                 activeDot={{ r: 8 }}
                             />
@@ -178,7 +178,7 @@ const Chart = () => {
                         </LineChart>
                     </ResponsiveContainer>
 
-                    <p className="text-x-line">день</p>
+                    <p className="text-x-line">day</p>
                 </div>
             </Mobile>
         </ChartWrapper>

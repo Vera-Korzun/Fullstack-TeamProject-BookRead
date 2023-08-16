@@ -34,8 +34,8 @@ const EndTrainingModal = memo(() => {
                 <Modal closeModal={closeModal}>
                     <EndTrainingModalStyled>
                         <img src={thumb_up} alt="" className="statModalImg" />
-                        <p className="statModalTitle">Ти молодчина!</p>
-                        <p className="statModalTitle">Тренування закінчено!</p>
+                        <p className="statModalTitle">You are doing great!</p>
+                        <p className="statModalTitle">Training is over!</p>
                         <button className="statModalBtn" onClick={closeModal}>
                             Ok
                         </button>

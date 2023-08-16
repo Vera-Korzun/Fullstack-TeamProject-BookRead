@@ -50,17 +50,17 @@ const MobBookItem = ({
                 </div>
 
                 <div>
-                    <p className="books__item">Автор:</p>
+                    <p className="books__item">Author:</p>
                     <span className="books__item-descr">{author}</span>
                 </div>
 
                 <div>
-                    <p className="books__item">Рік:</p>
+                    <p className="books__item">Year:</p>
                     <span className="books__item-descr">{year}</span>
                 </div>
 
                 <div>
-                    <p className="books__item">Стор.:</p>
+                    <p className="books__item">Pages:</p>
                     <span className="books__item-descr">{numberOfPages}</span>
                 </div>
             </li>

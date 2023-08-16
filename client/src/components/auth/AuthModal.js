@@ -27,53 +27,52 @@ const AuthModal = ({ setOpenModal }) => {
                         </Link>
                     </button>
                     <h1 className="mainTitleSignUp">Books Reading</h1>
-                    <h2 className="titleSignUp">Допоможе вам</h2>
+                    <h2 className="titleSignUp">Will help you</h2>
                     <ul className="authFormList">
                         <li className="authFormText">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Швидше сформулювати свою ціль і розпочати читати
+                                Formulate your goal faster and start reading
                             </p>
                         </li>
                         <li className="authFormText">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Пропорційно розподілити навантаження на кожний
-                                день
+                                Proportionately distribute the load for each day
                             </p>
                         </li>
                         <li className="authFormText">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Відстежувати особистий успіх
+                                Track personal success
                             </p>
                         </li>
                     </ul>
-                    <h2 className="titleSignUp">Також ви зможете</h2>
+                    <h2 className="titleSignUp">You can also</h2>
                     <ul className="authFormList">
                         <li className="authFormText ">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Формувати особисту думку незалежну від інших
+                                Form a personal opinion independent of others
                             </p>
                         </li>
                         <li className="authFormText">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Підвищити свої професійні якості опираючись на
-                                нові знання
+                                Improve your professional qualities based on new
+                                knowledge
                             </p>
                         </li>
                         <li className="authFormText last">
                             <img className="pointer" src={pointer} alt="" />
                             <p className="instraction">
-                                Стати цікавим співрозмовником
+                                Become an interesting interlocutor
                             </p>
                         </li>
                     </ul>
                     <div className="sign">
                         <button className="buttonSign up">
-                            <Link to="/signup">Реєстрація</Link>
+                            <Link to="/signup">Sign up</Link>
                         </button>
                     </div>
                 </div>

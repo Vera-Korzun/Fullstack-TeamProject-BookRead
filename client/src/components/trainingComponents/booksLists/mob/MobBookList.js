@@ -35,15 +35,15 @@ const MobBookList = ({ books, onHandleDeleteBook }) => {
                         <span className="books__item-descr">...</span>
                     </li>
                     <li>
-                        <p className="books__item">Автор:</p>
+                        <p className="books__item">Author:</p>
                         <span className="books__item-descr">...</span>
                     </li>
                     <li>
-                        <p className="books__item">Рік:</p>
+                        <p className="books__item">Year:</p>
                         <span className="books__item-descr">...</span>
                     </li>
                     <li>
-                        <p className="books__item">Стор.:</p>
+                        <p className="books__item">Pages:</p>
                         <span className="books__item-descr">...</span>
                     </li>
                 </ul>

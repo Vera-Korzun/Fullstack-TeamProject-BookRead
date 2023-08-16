@@ -14,33 +14,33 @@ const AuthFormContainer = () => {
     const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const errorMessagesSchemaSignUp = Yup.object().shape({
         username: Yup.string()
-            .min(2, 'Мінімальна кількість символів 2')
-            .max(30, 'Максимальна кількість символів 30')
-            .required('Введіть ім`я'),
+            .min(2, 'Minimum number of characters 2')
+            .max(30, 'Maximum number of characters 30')
+            .required('Enter a name'),
 
         email: Yup.string()
-            .required('Введіть email')
-            .matches(regex, 'Формат email невірний'),
+            .required('Enter email')
+            .matches(regex, 'Email format is incorrect'),
 
         password: Yup.string()
-            .min(6, 'Мінімальна кількість символів 6')
-            .max(20, 'Максимальна кількість символів 20')
-            .required('Введіть пароль'),
+            .min(6, 'Minimum number of characters 6')
+            .max(20, 'Maximum number of characters 20')
+            .required('Enter password'),
 
         passwordConfirmation: Yup.string().oneOf(
             [Yup.ref('password')],
-            'Паролі повинні співпадати',
+            'Passwords must match',
         ),
     });
     const errorMessagesSchemaSignIn = Yup.object().shape({
         email: Yup.string()
-            .required('Введіть email')
-            .matches(regex, 'Формат email невірний'),
+            .required('Enter email')
+            .matches(regex, 'Email format is incorrect'),
 
         password: Yup.string()
-            .min(6, 'Мінімальна кількість символів 6')
-            .max(20, 'Максимальна кількість символів 20')
-            .required('Введіть пароль'),
+            .min(6, 'Minimum number of characters 6')
+            .max(20, 'Maximum number of characters 20')
+            .required('Enter password'),
     });
     const errorMessagesSchema =
         location.pathname === '/signup'

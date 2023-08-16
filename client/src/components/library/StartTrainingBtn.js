@@ -41,7 +41,7 @@ const StartTrainingBtn = () => {
     return (
         <StartTrainingBtnStyled>
             <button className="formBtn" onClick={onHandleClick}>
-                Почати тренування
+                Start training
             </button>
         </StartTrainingBtnStyled>
     );

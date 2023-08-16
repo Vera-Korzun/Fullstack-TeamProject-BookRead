@@ -7,7 +7,7 @@ const Statistics = () => {
     const result = useSelector(state => state.training.results);
     return (
         <StatisticsStyled className="statisticsStyled">
-            <h1 className="statisticTitle">Статистика</h1>
+            <h1 className="statisticTitle">Statistics</h1>
             <ul className="statisticList scrollbar scrollbarText">
                 {result
                     .map(item => <StatisticsItem item={item} key={item._id} />)

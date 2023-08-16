@@ -12,11 +12,15 @@ const TimersSet = () => {
     return (
         <TimerToDayStyled className="timerToDayStyled">
             <div className="timerYear">
-                <p className="timer-title">До закінчення року залишилось</p>
+                <p className="timer-title">
+                    There is still time until the end of the year
+                </p>
                 <TimerToDay data={data} />
             </div>
             <div>
-                <p className="timer-title">До досягнення мети залишилось</p>
+                <p className="timer-title">
+                    There is still time to reach the goal
+                </p>
                 <TimerToDay data={endDate} dataStart={dataStart} />
             </div>
         </TimerToDayStyled>

@@ -51,7 +51,7 @@ const Wrapper = styled.div`
         @media screen and (min-width: 1280px) {
             display: flex;
             flex-direction: row;
-            width: 1117px;
+           // width: 1117px;
         }
     }
 

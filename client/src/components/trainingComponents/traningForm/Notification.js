@@ -15,5 +15,5 @@ const P = styled.p`
 `;
 
 export const Notif = () => {
-    return <P>Ви вже обрали цю книжку</P>;
+    return <P>You have already selected this book</P>;
 };

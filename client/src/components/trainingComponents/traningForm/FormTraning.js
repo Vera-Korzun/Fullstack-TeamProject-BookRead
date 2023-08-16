@@ -75,7 +75,7 @@ const FormTraning = () => {
                     <div className="training-form__pickers">
                         <InputDatePicker
                             value={formik.values.start}
-                            placeholderText="Початок"
+                            placeholderText="Beginning"
                             onChange={handleStartDate}
                             pickedDate={start ? new Date(start) : ''}
                         />
@@ -85,7 +85,7 @@ const FormTraning = () => {
 
                         <InputDatePicker
                             value={formik.values.end}
-                            placeholderText="Завершення"
+                            placeholderText="Completion"
                             onChange={handleEndDate}
                             pickedDate={end ? new Date(end) : ''}
                         />
@@ -105,7 +105,7 @@ const FormTraning = () => {
                     ) : null}
 
                     <button type="submit" className="bookFormBtn">
-                        Додати
+                        Add
                     </button>
                 </div>
             </form>
@@ -126,7 +126,7 @@ const FormTraning = () => {
 
             {booksArr.length > 0 && (
                 <button onClick={onHandleAddTraining} className="formBtn">
-                    Почати тренування
+                    Start training
                 </button>
             )}
         </FormTraningStyle>
