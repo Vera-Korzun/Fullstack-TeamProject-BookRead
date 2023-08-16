@@ -26,13 +26,13 @@ const ErrTrainingModal = ({ oncloseModal, setInitialModal }) => {
                     height="54px"
                 />
                 <p className="modalTitle">
-                    Твоє тренування закінчено, але книги прочитані не всі.
+                    Your training is over, but not all the books have been read.
                 </p>
                 <p className="modalTitle">
-                    У тебе є можливість почати тренування знову.
+                    You have the opportunity to start training again.
                 </p>
                 <button className="modalBtn" onClick={onClick}>
-                    Почати тренування
+                    Start training
                 </button>
             </div>
         </ErrTrainingModalStyled>

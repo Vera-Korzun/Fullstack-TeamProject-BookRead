@@ -19,7 +19,7 @@ const Result = () => {
     const validationSchema = yup.object({
         date: yup
             .string()
-            .required('Виберіть дату')
+            .required('Select a date')
             .test({
                 message: 'Date ERROR',
                 test: function (value) {
@@ -30,10 +30,7 @@ const Result = () => {
                     );
                 },
             }),
-        pages: yup
-            .number()
-            .min(1, `Обов'язкове поле(не менше одиниці)`)
-            .required(),
+        pages: yup.number().min(1, `Mandatory field (at least one)`).required(),
     });
 
     const formik = useFormik({
@@ -66,7 +63,7 @@ const Result = () => {
 
     return (
         <ResultStyled className="resultStyled">
-            <p className="resultsTitle">Результати</p>
+            <p className="resultsTitle">Results</p>
             <form
                 className="resultsForm"
                 onSubmit={formik.handleSubmit}
@@ -75,14 +72,14 @@ const Result = () => {
                 <div className="formGroup">
                     <div className="inputGroup">
                         <label className="label" htmlFor="date">
-                            Дата
+                            Date
                         </label>
                         <DatePicker
                             selected={formik.values.date}
                             onChange={handleDateChange}
                             dateFormat="d.MM.yyyy"
                             name="data"
-                            placeholderText="д.мм.рррр"
+                            placeholderText="d.мм.yyyy"
                             className="formInputDate"
                             popperProps={{
                                 positionFixed: true,
@@ -95,7 +92,7 @@ const Result = () => {
                     </div>
                     <div className="inputGroup">
                         <label className="label" htmlFor="pages">
-                            Кількість сторінок
+                            Number of pages
                         </label>
                         <input
                             type="number"
@@ -114,7 +111,7 @@ const Result = () => {
                     </div>
                 </div>
                 <button type="submit" className="formButton">
-                    Додати результат
+                    Add result
                 </button>
             </form>
             <Statistics />

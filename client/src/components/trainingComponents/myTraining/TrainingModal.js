@@ -89,7 +89,7 @@ const TrainingModal = () => {
             {booksArr.length > 0 && (
                 <div>
                     <button onClick={onHandleAddTraining} className="formBtn">
-                        Почати тренування
+                        Start training
                     </button>
                 </div>
             )}
@@ -110,14 +110,14 @@ const TrainingModal = () => {
                         </button>
                         <div className="training">
                             <div className="baner">
-                                <p className="baner__title">Моє тренування</p>
+                                <p className="baner__title">My training</p>
                             </div>
                             <form className="training-form">
                                 <div className="training-form__wrap">
                                     <div className="training-form__pickers">
                                         <InputDatePicker
                                             value={formik.values.start}
-                                            placeholderText="Початок"
+                                            placeholderText="Beginning"
                                             onChange={handleStartDate}
                                             pickedDate={
                                                 start ? new Date(start) : ''
@@ -132,7 +132,7 @@ const TrainingModal = () => {
 
                                         <InputDatePicker
                                             value={formik.values.end}
-                                            placeholderText="Завершення"
+                                            placeholderText="Completion"
                                             onChange={handleEndDate}
                                             pickedDate={
                                                 end ? new Date(end) : ''
@@ -169,7 +169,7 @@ const TrainingModal = () => {
                                         type="submit"
                                         className="bookFormBtn"
                                     >
-                                        Додати
+                                        Add
                                     </button>
                                 </div>
                             </form>

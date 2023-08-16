@@ -12,10 +12,10 @@ const DescBookList = ({ books, onHandleDeleteBook }) => {
         <DescBookListStyle>
             <div className="books-titles">
                 <div className="books-titles__list">
-                    <p>Назва книги</p>
-                    <p>Автор</p>
-                    <p>Рік</p>
-                    <p>Стор.</p>
+                    <p>Book title</p>
+                    <p>Author</p>
+                    <p>Year</p>
+                    <p>pages</p>
                 </div>
             </div>
             <div className="books-library">

@@ -5,7 +5,7 @@ const MyTraining = () => {
     return (
         <div className="training">
             <div className="baner">
-                <p className="baner__title">Моє тренування</p>
+                <p className="baner__title">My training</p>
             </div>
             <FormTraning />
         </div>

@@ -3,22 +3,22 @@ import moment from 'moment';
 
 export const validationSchema = Yup.object().shape({
     start: Yup.date()
-        .required('Вкажіть дату початку тренування')
+        .required('Indicate the training start date')
         .max(
             moment(Date.now()).format('YYYY-MM-DD'),
-            'Повинна бути сьогодняшня дата!',
+            'Must be today&#8217s date!',
         ),
 
     end: Yup.date()
-        .required('Вкажіть дату завершення тренування')
-        .min(Yup.ref('start'), 'Вибіріть коректну дату')
+        .required('Indicate the end date of training')
+        .min(Yup.ref('start'), 'Choose the correct date')
         .test({
-            message: 'Дата завершення повинна бути більшою',
+            message: 'End date must be greater than',
             test: function (value) {
                 const start = moment(this.parent.start).format('YYYY-MM-DD');
                 const end = moment(value).format('YYYY-MM-DD');
                 return !moment(start).isSame(moment(end));
             },
         }),
-    book: Yup.object().required('Ви не обрали книжку'),
+    book: Yup.object().required('You have not selected a book'),
 });

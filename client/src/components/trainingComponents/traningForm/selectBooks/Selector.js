@@ -38,7 +38,7 @@ const Selector = ({ onChange }) => {
     return (
         <Select
             className="selectorBooks"
-            placeholder="Обрати книги з бібліотеки"
+            placeholder="Choose books from the library"
             options={bookSelect}
             onChange={value => onChange(value)}
             styles={customStyles}

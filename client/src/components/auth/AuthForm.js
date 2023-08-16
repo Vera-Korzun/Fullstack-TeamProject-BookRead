@@ -221,11 +221,11 @@ const AuthForm = ({
                         <div className="div-cont">
                             <Two />
                             <p className="teza">
-                                Книги — это корабли мысли, странствующие по
-                                волнам времени и бережно несущие свой
-                                драгоценный груз от поколения к поколению.
+                                Books are ships of thought, roaming the waves of
+                                time and carefully carrying their precious cargo
+                                from generation to generation.
                             </p>
-                            <p className="becon line">Бэкон Ф.</p>
+                            <p className="becon line">Bacon F.</p>
                         </div>
                     )}
                     {isOpenModal && window.innerWidth < 767 && (

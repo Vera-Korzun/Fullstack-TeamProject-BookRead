@@ -15,12 +15,12 @@ const WillReadBooks = () => {
     return (
         <WillReadBooksStyled className="willReadBooksStyled  container">
             <Tablet>
-                <h2>Маю намір прочитати</h2>
+                <h2>It will be read</h2>
                 <div className="table-title">
-                    <p>Назва книги</p>
-                    <p>Автор</p>
-                    <p>Рік</p>
-                    <p>Стор.</p>
+                    <p>Book title</p>
+                    <p>Author</p>
+                    <p>Year</p>
+                    <p>Pages</p>
                 </div>
                 <ul>
                     {booksWillRead.map(item => (
@@ -30,7 +30,7 @@ const WillReadBooks = () => {
             </Tablet>
             <Mobile>
                 <div className="willReadMobil">
-                    <h2>Маю намір прочитати</h2>
+                    <h2>It will be read</h2>
                     <ul>
                         {booksWillRead.map(item => (
                             <WillReadBookItemMobile

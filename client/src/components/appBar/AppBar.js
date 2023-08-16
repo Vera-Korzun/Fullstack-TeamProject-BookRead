@@ -73,7 +73,7 @@ const AppBar = () => {
                                     type="button"
                                     onClick={handleClick}
                                 >
-                                    Вихід
+                                    Log out
                                 </button>
                             </li>
                         </ul>
@@ -93,8 +93,7 @@ const AppBar = () => {
                 <Modal onToggleModal={closeModal}>
                     <div className="exit-modal">
                         <p>
-                            Якщо Ви вийдете з програми незбережені дані будуть
-                            втрачені
+                            If you exit the program, unsaved data will be lost
                         </p>
                         <div className="btn-wrapper">
                             <button
@@ -102,14 +101,14 @@ const AppBar = () => {
                                 className="cancel"
                                 onClick={closeModal}
                             >
-                                Відміна
+                                Cancel
                             </button>
                             <button
                                 type="button"
                                 className="exitBtn"
                                 onClick={logOut}
                             >
-                                Вийти
+                                logOut
                             </button>
                         </div>
                     </div>

@@ -24,7 +24,7 @@ const LibraryModal = () => {
                         <div className="libraryModal">
                             <ul className="list">
                                 <li className="listItem">
-                                    Крок 1.
+                                    Step 1.
                                     <div className="listItemPart1">
                                         <img
                                             src={book}
@@ -32,7 +32,7 @@ const LibraryModal = () => {
                                             className="listItemImgPart1"
                                         />
                                         <p className="listItemTitlePart1">
-                                            Створіть особисту бібліотеку
+                                            Create a personal library
                                         </p>
                                     </div>
                                     <div className="listItemPart2">
@@ -42,13 +42,13 @@ const LibraryModal = () => {
                                             className="listItemImgPart2"
                                         />
                                         <p className="listItemTitlePart2">
-                                            Додайте до неї книжки, які маєте
-                                            намір прочитати.
+                                            Add the books you intend to read to
+                                            it.
                                         </p>
                                     </div>
                                 </li>
                                 <li className="listItem">
-                                    Крок 2.
+                                    Step 2.
                                     <div className="listItemPart1">
                                         <img
                                             src={flag}
@@ -56,7 +56,7 @@ const LibraryModal = () => {
                                             className="listItemImgPart1"
                                         />
                                         <p className="listItemTitlePart1">
-                                            Сформуйте своє перше тренування
+                                            Create your first training
                                         </p>
                                     </div>
                                     <div className="listItemPart2">
@@ -66,8 +66,8 @@ const LibraryModal = () => {
                                             className="listItemImgPart2"
                                         />
                                         <p className="listItemTitlePart2">
-                                            Визначте ціль, оберіть період,
-                                            розпочинайте тренування.
+                                            Define a goal, choose a period,
+                                            start training.
                                         </p>
                                     </div>
                                 </li>
@@ -86,7 +86,7 @@ const LibraryModal = () => {
             <Tablet>
                 <ul className="list">
                     <li className="listItem">
-                        Крок 1.
+                        Step 1.
                         <div className="listItemPart1">
                             <img
                                 src={book}
@@ -94,7 +94,7 @@ const LibraryModal = () => {
                                 className="listItemImgPart1"
                             />
                             <p className="listItemTitlePart1">
-                                Створіть особисту бібліотеку
+                                Create a personal library
                             </p>
                         </div>
                         <div className="listItemPart2">
@@ -104,13 +104,12 @@ const LibraryModal = () => {
                                 className="listItemImgPart2"
                             />
                             <p className="listItemTitlePart2">
-                                Додайте до неї книжки, які маєте намір
-                                прочитати.
+                                Add the books you intend to read to it.
                             </p>
                         </div>
                     </li>
                     <li className="listItem">
-                        Крок 2.
+                        Step 2.
                         <div className="listItemPart1">
                             <img
                                 src={flag}
@@ -118,7 +117,7 @@ const LibraryModal = () => {
                                 className="listItemImgPart1"
                             />
                             <p className="listItemTitlePart1">
-                                Сформуйте своє перше тренування
+                                Create your first training
                             </p>
                         </div>
                         <div className="listItemPart2">
@@ -128,8 +127,7 @@ const LibraryModal = () => {
                                 className="listItemImgPart2"
                             />
                             <p className="listItemTitlePart2">
-                                Визначте ціль, оберіть період, розпочинайте
-                                тренування.
+                                Define a goal, choose a period, start training.
                             </p>
                         </div>
                     </li>

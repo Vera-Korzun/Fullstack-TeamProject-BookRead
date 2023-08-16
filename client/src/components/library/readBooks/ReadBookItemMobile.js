@@ -29,19 +29,19 @@ const ReadingBookItemMobile = ({ item }) => {
                     <p>{item.title}</p>
                 </div>
                 <div className="author flex">
-                    <p className="title">Автор:</p>
+                    <p className="title">Author:</p>
                     <p className="text">{item.author}</p>
                 </div>
                 <div className="publishYear flex">
-                    <p className="title">Рік:</p>
+                    <p className="title">Year:</p>
                     <p className="text">{item.year}</p>
                 </div>
                 <div className="pages flex">
-                    <p className="title">Стор.:</p>
+                    <p className="title">Pages:</p>
                     <p className="text">{item.numberOfPages}</p>
                 </div>
                 <div className="review flex">
-                    <p className="title">Рейтинг:</p>
+                    <p className="title">Rating:</p>
                     <StarRatings
                         rating={item.rating}
                         starRatedColor="#FF6B08"
@@ -58,7 +58,7 @@ const ReadingBookItemMobile = ({ item }) => {
                     id={item._id}
                     onClick={handleClick}
                 >
-                    Резюме
+                    Resume
                 </button>
             </ReadBookItemMobileStyled>
             {isOpen && (

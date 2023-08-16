@@ -9,15 +9,15 @@ const WillReadBookItemMobile = ({ book }) => {
                 <p>{book.title}</p>
             </div>
             <div className="author flex">
-                <p className="title">Автор:</p>
+                <p className="title">Author:</p>
                 <p className="text">{book.author}</p>
             </div>
             <div className="publishYear flex">
-                <p className="title">Рік:</p>
+                <p className="title">Year:</p>
                 <p className="text">{book.year}</p>
             </div>
             <div className="pages flex">
-                <p className="title">Стор.:</p>
+                <p className="title">Pages:</p>
                 <p className="text">{book.numberOfPages}</p>
             </div>
         </ReadBookItemMobileStyled>

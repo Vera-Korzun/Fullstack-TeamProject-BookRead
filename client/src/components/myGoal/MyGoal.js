@@ -19,7 +19,7 @@ const MyGoal = ({ startTraining }) => {
     return (
         <MyGoalStyled className="myGoalStyled" startTraining={startTraining}>
             <div className="statistic-title">
-                <p>Моя мета прочитати</p>
+                <p>My goal is to read</p>
             </div>
             <div className="statistic">
                 <div className="statistic-book">
@@ -29,7 +29,7 @@ const MyGoal = ({ startTraining }) => {
                         </span>
                     </div>
                     <p className="statistic__text">
-                        Кількість <span> книжок</span>{' '}
+                        Number <span> of books</span>{' '}
                     </p>
                 </div>
                 <div className="statistic-day">
@@ -39,7 +39,7 @@ const MyGoal = ({ startTraining }) => {
                         </span>
                     </div>
                     <p className="statistic__text">
-                        Кількість <span> днів</span>
+                        Number <span> of days</span>
                     </p>
                 </div>
                 {startTraining && (
@@ -51,7 +51,7 @@ const MyGoal = ({ startTraining }) => {
                         </div>
 
                         <p className="statistic__text">
-                            Залишилось <span> книжок</span>
+                            Books <span> left</span>
                         </p>
                     </div>
                 )}

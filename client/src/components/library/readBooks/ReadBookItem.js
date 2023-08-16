@@ -49,7 +49,7 @@ const ReadBookItem = ({ item }) => {
                         id={item._id}
                         onClick={handleClick}
                     >
-                        Резюме
+                        Resume
                     </button>
                 </div>
             </ReadBookItemStyled>

@@ -14,12 +14,12 @@ const ReadingBooks = () => {
     return (
         <ReadingBooksStyled className="readingBooksStyled container">
             <Tablet>
-                <h2>Читаю</h2>
+                <h2>It is reading</h2>
                 <div className="table-title">
-                    <p>Назва книги</p>
-                    <p>Автор</p>
-                    <p>Рік</p>
-                    <p>Стор.</p>
+                    <p>Book title</p>
+                    <p>Author</p>
+                    <p>Year</p>
+                    <p>Pages</p>
                 </div>
                 <ul>
                     {bookNowRead.map(book => (
@@ -29,7 +29,7 @@ const ReadingBooks = () => {
             </Tablet>
             <Mobile>
                 <div className="readingNowMobil">
-                    <h2>Читаю</h2>
+                    <h2>It is reading</h2>
                     <ul>
                         {bookNowRead.map((item, idx) => (
                             <ReadBookItemMobile book={item} key={idx} />
